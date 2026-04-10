@@ -93,3 +93,10 @@
     .faq-card:focus .icon-chevron {
         transform: rotate(180deg);
     }
+
+    /* التجاوب للموبايل */
+    @media (max-width: 768px) {
+        .faq-grid {
+            grid-template-columns: 1fr;
+        }
+    }
