@@ -9,6 +9,12 @@
         margin: auto;
     }
 
+    @media (max-width: 992px) {
+        .search-container {
+            width: 100%;
+        }
+    }
+
     .search-container select {
         padding: 15px 10px;
         border: none;

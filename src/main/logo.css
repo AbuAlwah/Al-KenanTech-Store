@@ -33,6 +33,12 @@
         max-width: 95%;
     }
 
+    @media (max-width: 992px) {
+        .header-flex {
+            flex-direction: column;
+        }
+    }
+
     /* --- تنسيق اللوجو الجديد (AL KENAN TECH) --- */
     .brand-logo {
         display: inline-flex;
