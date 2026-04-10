@@ -1,0 +1,95 @@
+    /* --- قسم الأسئلة الشائعة (FAQ) --- */
+    .faq-section {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 0 20px;
+        direction: rtl;
+    }
+
+    .faq-title-wrapper {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .faq-title-wrapper h2 {
+        font-size: 36px;
+        font-weight: 900;
+        color: #333;
+    }
+
+    .faq-title-wrapper span {
+        color: #ff8c00;
+        /* البرتقالي الخاص بك */
+    }
+
+    .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .faq-card {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 15px;
+        padding: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+
+    .faq-card:hover,
+    .faq-card:focus {
+        border-color: #ff8c00;
+        box-shadow: 0 10px 25px rgba(255, 140, 0, 0.1);
+    }
+
+    .faq-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-question-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .faq-icon-bg {
+        width: 45px;
+        height: 45px;
+        background: #fdf2e9;
+        color: #ff8c00;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faq-header h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        margin: 0;
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.4s ease;
+        padding-right: 60px;
+        /* ليصطف النص تحت السؤال */
+    }
+
+    /* حركة الفتح عند الضغط (Focus) */
+    .faq-card:focus .faq-answer {
+        max-height: 200px;
+        opacity: 1;
+        margin-top: 15px;
+    }
+
+    .faq-card:focus .icon-chevron {
+        transform: rotate(180deg);
+    }
