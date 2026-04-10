@@ -1,0 +1,8 @@
+# حماية ملفات الإعدادات والبيانات الحساسة
+.env
+secret.txt
+config.php
+
+# تجاهل ملفات النظام
+.DS_Store
+Thumbs.db
