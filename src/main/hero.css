@@ -1,0 +1,62 @@
+    .hero {
+        margin-top: 30px;
+        background: linear-gradient(178deg, #001f5e 20%, #ff7600 100%);
+        padding: 60px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .hero-text {
+        flex: 1;
+        z-index: 2;
+    }
+
+    .hero-text h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text span {
+        color: #ff8c00;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        color: #cbd5e0;
+        margin-bottom: 30px;
+        max-width: 450px;
+    }
+
+    .shop-btn {
+        background: #ff7600;
+        color: #fff;
+        padding: 15px 35px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .shop-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+    }
+
+    .hero-img {
+        flex: 1;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .hero-img img {
+        max-width: 100%;
+        height: auto;
+        filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+        max-width: 350px;
+    }
