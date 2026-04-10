@@ -1,0 +1,42 @@
+    /* شريط البحث */
+    .search-container {
+        flex: 1;
+        display: flex;
+        border: 2px solid #ff8c00;
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .search-container select {
+        padding: 15px 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: Tajawal;
+        border-left-style: solid;
+        border-left-width: thin;
+        border-left-color: burlywood
+    }
+
+    .search-container input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-family: Tajawal;
+    }
+
+    .search-btn {
+        background: #ff7600;
+        color: #fff;
+        border: none;
+        padding: 0 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .search-btn:hover {
+        background: #e67e00;
+    }

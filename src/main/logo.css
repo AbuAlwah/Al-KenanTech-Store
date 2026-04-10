@@ -1,124 +1,68 @@
     a {
-      text-decoration: none;
-      color: inherit;
+        text-decoration: none;
+        color: inherit;
     }
 
     ul {
-      list-style: none;
+        list-style: none;
     }
 
     .container {
-      max-width: 90%;
-      margin: 0 auto;
-      padding: 0 15px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 15px;
     }
 
     /* --- 2. الهيدر (Header) --- */
     .top-bar {
-      height: 4px;
-      background-color: #ff8c00;
+        height: 4px;
+        background-color: #ff8c00;
     }
 
     .main-header {
-      background: #fff;
-      padding: 20px 0;
-      border-bottom: 1px solid #eee;
+        background: #fff;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
     }
 
     .header-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      max-width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 95%;
     }
 
     /* --- تنسيق اللوجو الجديد (AL KENAN TECH) --- */
     .brand-logo {
-      display: inline-flex;
-      align-items: baseline;
-      font-family: 'Arial Black', 'Tajawal', sans-serif;
-      text-decoration: none;
-      position: relative;
-      padding-top: 10px;
-    }
-
-    .brand-logo .al {
-      color: #000;
-      font-size: 32px;
-      font-weight: 900;
-      margin-left: 5px;
-    }
-
-    .k-wrap {
-      position: relative;
-      display: inline-flex;
-    }
-
-    .brand-logo .k {
-      color: #ff8c00;
-      font-size: 56px;
-      font-weight: 900;
-      line-height: 1;
-    }
-
-    .k-wrap .line {
-      position: absolute;
-      top: 10px;
-      left: 39px;
-      width: 80px;
-      height: 6px;
-      background-color: #ff8c00;
-      border-radius: 0 3px 3px 0;
-    }
-
-    .brand-logo .enan {
-      color: #000;
-      font-size: 32px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .brand-logo .tech {
-      position: absolute;
-      top: 15px;
-      left: 171px;
-      color: #ff8c00;
-      font-size: 10px;
-      font-weight: bold;
-    }
-
-    /* ضبط اللوجو للموبايل لكي لا يخرج عن الشاشة */
-    @media (max-width: 768px) {
-      .brand-logo {
         display: inline-flex;
         align-items: baseline;
         font-family: 'Arial Black', 'Tajawal', sans-serif;
         text-decoration: none;
         position: relative;
         padding-top: 10px;
-      }
+    }
 
-      .brand-logo .al {
+    .brand-logo .al {
         color: #000;
         font-size: 32px;
         font-weight: 900;
         margin-left: 5px;
-      }
+    }
 
-      .k-wrap {
+    .k-wrap {
         position: relative;
         display: inline-flex;
-      }
+    }
 
-      .brand-logo .k {
+    .brand-logo .k {
         color: #ff8c00;
         font-size: 56px;
         font-weight: 900;
         line-height: 1;
-      }
+    }
 
-      .k-wrap .line {
+    .k-wrap .line {
         position: absolute;
         top: 10px;
         left: 39px;
@@ -126,21 +70,77 @@
         height: 6px;
         background-color: #ff8c00;
         border-radius: 0 3px 3px 0;
-      }
+    }
 
-      .brand-logo .enan {
+    .brand-logo .enan {
         color: #000;
         font-size: 32px;
         font-weight: 900;
         letter-spacing: 2px;
-      }
+    }
 
-      .brand-logo .tech {
+    .brand-logo .tech {
         position: absolute;
         top: 15px;
         left: 171px;
         color: #ff8c00;
         font-size: 10px;
         font-weight: bold;
-      }
-    } 
+    }
+
+    /* ضبط اللوجو للموبايل لكي لا يخرج عن الشاشة */
+    @media (max-width: 768px) {
+        .brand-logo {
+            display: inline-flex;
+            align-items: baseline;
+            font-family: 'Arial Black', 'Tajawal', sans-serif;
+            text-decoration: none;
+            position: relative;
+            padding-top: 10px;
+        }
+
+        .brand-logo .al {
+            color: #000;
+            font-size: 32px;
+            font-weight: 900;
+            margin-left: 5px;
+        }
+
+        .k-wrap {
+            position: relative;
+            display: inline-flex;
+        }
+
+        .brand-logo .k {
+            color: #ff8c00;
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .k-wrap .line {
+            position: absolute;
+            top: 10px;
+            left: 39px;
+            width: 80px;
+            height: 6px;
+            background-color: #ff8c00;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .brand-logo .enan {
+            color: #000;
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .brand-logo .tech {
+            position: absolute;
+            top: 15px;
+            left: 171px;
+            color: #ff8c00;
+            font-size: 10px;
+            font-weight: bold;
+        }
+    }
