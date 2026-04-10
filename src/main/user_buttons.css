@@ -1,0 +1,22 @@
+/* أزرار المستخدم */
+.user-actions {
+  display: flex;
+  gap: 25px;
+}
+
+.action-item {
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.action-item i {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.action-item:hover {
+  color: #ff8c00;
+}
