@@ -53,3 +53,9 @@
         color: var(--on-surface-variant);
         line-height: 1.5;
     }
+
+    @media (max-width: 768px) {
+        .features-section {
+            display: none;
+        }
+    }

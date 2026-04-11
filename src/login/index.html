@@ -7,9 +7,9 @@
     <title>تسجيل الدخول | الكنان تك</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700" rel="stylesheet">
-    <link rel="stylesheet" href="../login/modal_layout.css">
-    <link rel="stylesheet" href="../login/global.css">
-    <link rel="stylesheet" href="../login/feature.css">
+    <link rel="stylesheet" href="../login/auth_layout.css">
+    <link rel="stylesheet" href="../login/auth_global.css">
+    <link rel="stylesheet" href="../login/auth_feature.css">
 </head>
 
 <body>
@@ -51,10 +51,45 @@
                             <h4>رأيك يهمنا</h4>
                             <p>قيم المنتجات التي جربتها وشارك تجربتك مع مجتمع الكنان التقني.</p>
                         </div>
+                        <div class="login-options">
+                            <button type="button" class="opt-btn active" onclick="switchLoginMethod('email')">البريد
+                                الإلكتروني</button>
+                            <button type="button" class="opt-btn" onclick="switchLoginMethod('phone')">رقم
+                                الهاتف</button>
+                        </div>
+
+                        <form>
+                            <div id="emailInputGroup" class="input-group" style="margin-bottom: 20px;">
+                                <label>البريد الإلكتروني</label>
+                                <input type="email" placeholder="example@tech.com" required>
+                            </div>
+                            <div id="phoneInputGroup" class="input-group hidden">
+                                <label>رقم الهاتف</label>
+                                <div class="tel-input">
+                                    <span class="code">+967</span>
+                                    <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="label-row">
+                                    <label>كلمة المرور</label>
+                                    <a href="#" class="forgot-link">نسيت كلمة المرور؟</a>
+                                </div>
+                                <input type="password" placeholder="••••••••" required>
+                            </div>
+                            <button type="submit" class="main-btn">دخول</button>
+                        </form>
+
+                        <div class="switch-text">
+                            <span>ليس لديك حساب؟</span>
+                            <button onclick="toggleAuth()">إنشاء حساب جديد</button>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
 
