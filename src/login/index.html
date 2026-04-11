@@ -130,4 +130,35 @@
     </div>
     </div>
 
+    <script>
+        // التبديل بين الدخول بالايميل أو الهاتف
+        function switchLoginMethod(method) {
+            const emailGroup = document.getElementById('emailInputGroup');
+            const phoneGroup = document.getElementById('phoneInputGroup');
+            const btns = document.querySelectorAll('.opt-btn');
+
+            btns.forEach(btn => btn.classList.remove('active'));
+
+            if (method === 'email') {
+                emailGroup.classList.remove('hidden');
+                phoneGroup.classList.add('hidden');
+                event.target.classList.add('active');
+            } else {
+                emailGroup.classList.add('hidden');
+                phoneGroup.classList.remove('hidden');
+                event.target.classList.add('active');
+            }
+        }
+
+        // التبديل بين تسجيل الدخول وإنشاء حساب
+        function toggleAuth() {
+            document.getElementById('loginForm').classList.toggle('hidden');
+            document.getElementById('registerForm').classList.toggle('hidden');
+            if (window.innerWidth < 768) {
+                document.getElementById('featuresPane').style.display = 'none';
+            }
+        }
+    </script>
+
+
 </body>
