@@ -7,9 +7,37 @@
     <title>تسجيل الدخول | الكنان تك</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700" rel="stylesheet">
+    <link rel="stylesheet" href="modal_layout.css">
 </head>
-<body>  
-        <div class="overlay">
+<style>
+
+    :root {
+        --bg-surface: #fff8f5;
+        --on-surface: #241913;
+        --on-surface-variant: #574337;
+        --primary: #974800;
+        --primary-gradient: linear-gradient(135deg, #f48024 0%, #974800 100%);
+        --surface-container: #ffeadf;
+        --outline-variant: #ddc1b1;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        background-color: var(--bg-surface);
+        color: var(--on-surface);
+        overflow: hidden;
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <div class="overlay">
         <div class="auth-modal animate-in">
             <a href="index.html" class="close-btn"><span class="material-symbols-outlined">close</span></a>
 
