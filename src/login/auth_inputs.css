@@ -1,0 +1,58 @@
+.input-group {
+    margin-bottom: 12px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--on-surface-variant);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    background: #fff1ea;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 12px;
+    color: var(--on-surface);
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    background: #ffffff;
+    box-shadow: 0 0 0 2px #ffdbc7;
+}
+
+.tel-input {
+    display: flex;
+    gap: 8px;
+    direction: ltr;
+}
+
+.tel-input .code {
+    background: #f9e4d9;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.register-grid {
+    display: grid;
+    grid-template-cols: 1fr 1fr;
+    gap: 12px;
+}
+
+.input-group.full {
+    grid-column: span 2;
+}
