@@ -47,12 +47,45 @@
     color: var(--primary);
 }
 
-.register-grid {
-    display: grid;
-    grid-template-cols: 1fr 1fr;
-    gap: 12px;
-}
-
 .input-group.full {
     grid-column: span 2;
+}
+
+/* تنسيق الحاوية للأيقونة والحقل */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* أيقونة البداية (يمين) */
+.prefix-icon {
+    position: absolute;
+    right: 12px;
+    color: var(--on-surface-variant);
+    opacity: 0.6;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+/* تعديل الحقل ليعطي مساحة للأيقونات */
+.input-group input {
+    padding-right: 40px !important; /* مساحة للأيقونة اليمنى */
+    padding-left: 40px !important;  /* مساحة لأيقونة العين اليسرى */
+}
+
+/* أيقونة العين (يسار) */
+.password-toggle {
+    position: absolute;
+    left: 12px;
+    color: var(--on-surface-variant);
+    opacity: 0.6;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.password-toggle:hover {
+    opacity: 1;
+    color: var(--primary);
 }
