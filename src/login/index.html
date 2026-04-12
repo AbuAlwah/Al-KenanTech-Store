@@ -82,10 +82,16 @@
                             </div>
                         </div>
                         <div id="phoneInputGroup" class="input-group hidden">
-                            <label>رقم الهاتف</label>
-                            <div class="tel-input">
-                                <span class="code">+967</span>
-                                <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
+                            <div class="input-group">
+                                <label>رقم الهاتف</label>
+                                <div class="tel-input"
+                                    style="position: relative; display: flex; align-items: center; gap: 8px;">
+                                    <span class="code">+967</span>
+                                    <div class="input-wrapper" style="flex: 1;">
+                                        <span class="material-symbols-outlined prefix-icon">call</span>
+                                        <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="input-group">
@@ -120,7 +126,10 @@
                     <form class="register-grid">
                         <div class="input-group full">
                             <label>الاسم الكامل</label>
-                            <input type="text" placeholder="ادخل اسمك هنا" required>
+                            <div class="input-wrapper">
+                                <span class="material-symbols-outlined prefix-icon">person</span>
+                                <input type="text" placeholder="ادخل اسمك هنا" required>
+                            </div>
                         </div>
                         <div class="input-group">
                             <label>البريد الإلكتروني</label>
@@ -131,9 +140,13 @@
                         </div>
                         <div class="input-group">
                             <label>رقم الهاتف</label>
-                            <div class="tel-input">
+                            <div class="tel-input"
+                                style="position: relative; display: flex; align-items: center; gap: 8px;">
                                 <span class="code">+967</span>
-                                <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
+                                <div class="input-wrapper" style="flex: 1;">
+                                    <span class="material-symbols-outlined prefix-icon">call</span>
+                                    <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
+                                </div>
                             </div>
                         </div>
                         <div class="input-group">
