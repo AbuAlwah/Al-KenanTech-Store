@@ -20,8 +20,8 @@
     width: 100%;
     background: #fff1ea;
     border: none;
-    padding: 12px 15px;
-    border-radius: 12px;
+    padding: 15px;
+    border-radius: 14px;
     color: var(--on-surface);
     outline: none;
     transition: 0.3s;
