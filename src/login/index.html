@@ -101,10 +101,10 @@
                             </div>
                             <div class="input-wrapper">
                                 <span class="material-symbols-outlined prefix-icon">lock</span>
-                                <input type="password" id="loginPass" placeholder="••••••••" required>
+                                <input type="password" class="password-field" placeholder="••••••••" required>
 
                                 <span class="material-symbols-outlined password-toggle"
-                                    onclick="togglePassword('loginPass', this)">
+                                    onclick="togglePassword(this)">
                                     visibility
                                 </span>
                             </div>
@@ -153,10 +153,10 @@
                             <label>كلمة المرور</label>
                             <div class="input-wrapper">
                                 <span class="material-symbols-outlined prefix-icon">lock</span>
-                                <input type="password" id="loginPass" placeholder="••••••••" required>
+                                <input type="password" class="password-field" placeholder="••••••••" required>
 
                                 <span class="material-symbols-outlined password-toggle"
-                                    onclick="togglePassword('loginPass', this)">
+                                    onclick="togglePassword(this)">
                                     visibility
                                 </span>
                             </div>
@@ -165,10 +165,10 @@
                             <label>تأكيد كلمة المرور</label>
                             <div class="input-wrapper">
                                 <span class="material-symbols-outlined prefix-icon">lock</span>
-                                <input type="password" id="loginPass" placeholder="••••••••" required>
+                                <input type="password" class="password-field" placeholder="••••••••" required>
 
                                 <span class="material-symbols-outlined password-toggle"
-                                    onclick="togglePassword('loginPass', this)">
+                                    onclick="togglePassword(this)">
                                     visibility
                                 </span>
                             </div>
@@ -215,17 +215,18 @@
             }
         }
 
-        function togglePassword(inputId, iconElement) {
-            const input = document.getElementById(inputId);
+        function togglePassword(button) {
+            // الوصول للحقل الموجود داخل نفس الـ wrapper
+            const input = button.parentElement.querySelector('input');
+
             if (input.type === "password") {
                 input.type = "text";
-                iconElement.textContent = "visibility_off";
+                button.textContent = "visibility_off";
             } else {
                 input.type = "password";
-                iconElement.textContent = "visibility";
+                button.textContent = "visibility";
             }
-        }
-    </script>
+        }  </script>
 
 </body>
 
