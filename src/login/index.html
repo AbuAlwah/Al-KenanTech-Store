@@ -54,83 +54,93 @@
                             <h4>رأيك يهمنا</h4>
                             <p>قيم المنتجات التي جربتها وشارك تجربتك مع مجتمع الكنان التقني.</p>
                         </div>
-                        <div class="login-options">
-                            <button type="button" class="opt-btn active" onclick="switchLoginMethod('email')">البريد
-                                الإلكتروني</button>
-                            <button type="button" class="opt-btn" onclick="switchLoginMethod('phone')">رقم
-                                الهاتف</button>
-                        </div>
-
-                        <form>
-                            <div id="emailInputGroup" class="input-group" style="margin-bottom: 20px;">
-                                <label>البريد الإلكتروني</label>
-                                <input type="email" placeholder="example@tech.com" required>
-                            </div>
-                            <div id="phoneInputGroup" class="input-group hidden">
-                                <label>رقم الهاتف</label>
-                                <div class="tel-input">
-                                    <span class="code">+967</span>
-                                    <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <div class="label-row">
-                                    <label>كلمة المرور</label>
-                                    <a href="#" class="forgot-link">نسيت كلمة المرور؟</a>
-                                </div>
-                                <input type="password" placeholder="••••••••" required>
-                            </div>
-                            <button type="submit" class="main-btn">دخول</button>
-                        </form>
-
-                        <div class="switch-text">
-                            <span>ليس لديك حساب؟</span>
-                            <button onclick="toggleAuth()">إنشاء حساب جديد</button>
-                        </div>
-                    </div>
-
-                    <div id="registerForm" class="hidden">
-                        <div class="form-header">
-                            <h1>عضوية جديدة</h1>
-                            <p>انضم إلينا الآن في الكنان تك</p>
-                        </div>
-                        <form class="register-grid">
-                            <div class="input-group full">
-                                <label>الاسم الكامل</label>
-                                <input type="text" placeholder="ادخل اسمك هنا" required>
-                            </div>
-                            <div class="input-group">
-                                <label>البريد الإلكتروني</label>
-                                <input type="email" placeholder="email@tech.com">
-                            </div>
-                            <div class="input-group">
-                                <label>رقم الهاتف</label>
-                                <div class="tel-input">
-                                    <span class="code">+967</span>
-                                    <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <label>كلمة المرور</label>
-                                <input type="password" placeholder="••••••••" required>
-                            </div>
-                            <div class="input-group">
-                                <label>تأكيد كلمة المرور</label>
-                                <input type="password" placeholder="••••••••" required>
-                            </div>
-
-                            <button type="submit" class="main-btn full">تأكيد التسجيل</button>
-                        </form>
-                        <div class="switch-text">
-                            <button onclick="toggleAuth()">العودة لتسجيل الدخول</button>
-                        </div>
-
-
                     </div>
                 </div>
             </div>
+
+            <div class="forms-section">
+
+                <div id="loginForm">
+                    <div class="form-header">
+                        <h1>تسجيل الدخول</h1>
+                        <p>اختر الطريقة المناسبة لك للدخول</p>
+                    </div>
+
+                    <div class="login-options">
+                        <button type="button" class="opt-btn active" onclick="switchLoginMethod('email')">البريد
+                            الإلكتروني</button>
+                        <button type="button" class="opt-btn" onclick="switchLoginMethod('phone')">رقم
+                            الهاتف</button>
+                    </div>
+
+                    <form>
+                        <div id="emailInputGroup" class="input-group" style="margin-bottom: 20px;">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" placeholder="example@tech.com" required>
+                        </div>
+                        <div id="phoneInputGroup" class="input-group hidden">
+                            <label>رقم الهاتف</label>
+                            <div class="tel-input">
+                                <span class="code">+967</span>
+                                <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="label-row">
+                                <label>كلمة المرور</label>
+                                <a href="#" class="forgot-link">نسيت كلمة المرور؟</a>
+                            </div>
+                            <input type="password" placeholder="••••••••" required>
+                        </div>
+                        <button type="submit" class="main-btn">دخول</button>
+                    </form>
+
+                    <div class="switch-text">
+                        <span>ليس لديك حساب؟</span>
+                        <button onclick="toggleAuth()">إنشاء حساب جديد</button>
+                    </div>
+                </div>
+
+                <div id="registerForm" class="hidden">
+                    <div class="form-header">
+                        <h1>عضوية جديدة</h1>
+                        <p>انضم إلينا الآن في الكنان تك</p>
+                    </div>
+                    <form class="register-grid">
+                        <div class="input-group full">
+                            <label>الاسم الكامل</label>
+                            <input type="text" placeholder="ادخل اسمك هنا" required>
+                        </div>
+                        <div class="input-group">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" placeholder="email@tech.com">
+                        </div>
+                        <div class="input-group">
+                            <label>رقم الهاتف</label>
+                            <div class="tel-input">
+                                <span class="code">+967</span>
+                                <input type="tel" placeholder="777000000" required maxlength="9" minlength="9">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>كلمة المرور</label>
+                            <input type="password" placeholder="••••••••" required>
+                        </div>
+                        <div class="input-group">
+                            <label>تأكيد كلمة المرور</label>
+                            <input type="password" placeholder="••••••••" required>
+                        </div>
+
+                        <button type="submit" class="main-btn full">تأكيد التسجيل</button>
+                    </form>
+                    <div class="switch-text">
+                        <button onclick="toggleAuth()">العودة لتسجيل الدخول</button>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
     <script>
@@ -163,5 +173,5 @@
         }
     </script>
 
-
 </body>
+</html>
