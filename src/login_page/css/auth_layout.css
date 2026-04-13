@@ -134,4 +134,34 @@
         max-width: 320px;
     }
 
-    
+    /* الخلفية والدوائر الملونة */
+.blur-bg {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.blur-1 {
+    top: -100px;
+    left: -100px;
+    background: rgba(244, 128, 36, 0.1);
+}
+
+.blur-2 {
+    bottom: -100px;
+    right: -100px;
+    background: rgba(0, 170, 237, 0.05);
+}
+
+/* تخطيط المحتوى الرئيسي */
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 50px;
+    position: relative;
+}
