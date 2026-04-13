@@ -81,3 +81,55 @@
         font-size: 12px;
         color: #aaa;
     }
+
+    /* البطاقة البيضاء المركزية */
+.otp-card {
+    background: var(--surface-card, #ffffff);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(36, 25, 19, 0.06);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+/* الدائرة الخاصة بالأيقونة */
+.icon-circle {
+    width: 90px;
+    height: 90px;
+    background: #fff1ea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+/* تنسيق خانات الأرقام الستة */
+.otp-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    direction: ltr; /* مهم جداً للأرقام */
+    margin: 30px 0;
+}
+
+.otp-input {
+    width: 50px;
+    height: 65px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    background: #f3f3f3;
+    transition: all 0.3s;
+}
+
+.otp-input:focus {
+    border-color: var(--primary-orange, #f48024);
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(244, 128, 36, 0.2);
+}
