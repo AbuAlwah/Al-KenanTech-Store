@@ -79,3 +79,25 @@
 .main-btn.full {
     grid-column: span 2;
 }
+
+/* الزر المتدرج الاحترافي */
+.btn-confirm {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f48024, #974800);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-confirm:hover {
+    opacity: 0.9;
+}
+
+.btn-confirm:active {
+    transform: scale(0.98);
+}
