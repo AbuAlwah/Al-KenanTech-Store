@@ -67,9 +67,9 @@
                     </div>
 
                     <div class="login-options">
-                        <button type="button" class="opt-btn active" onclick="switchLoginMethod('email')">البريد
+                        <button type="button" class="opt-btn active" onclick="switchLoginMethod('email' , event)">البريد
                             الإلكتروني</button>
-                        <button type="button" class="opt-btn" onclick="switchLoginMethod('phone')">رقم
+                        <button type="button" class="opt-btn" onclick="switchLoginMethod('phone', event)">رقم
                             الهاتف</button>
                     </div>
 
@@ -186,30 +186,7 @@
         </div>
     </div>
 
-    <script>
-
-
-        // التبديل بين تسجيل الدخول وإنشاء حساب
-        function toggleAuth() {
-            document.getElementById('loginForm').classList.toggle('hidden');
-            document.getElementById('registerForm').classList.toggle('hidden');
-            if (window.innerWidth < 768) {
-                document.getElementById('featuresPane').style.display = 'none';
-            }
-        }
-
-        function togglePassword(button) {
-            // الوصول للحقل الموجود داخل نفس الـ wrapper
-            const input = button.parentElement.querySelector('input');
-
-            if (input.type === "password") {
-                input.type = "text";
-                button.textContent = "visibility_off";
-            } else {
-                input.type = "password";
-                button.textContent = "visibility";
-            }
-        }  </script>
+  <script src="../js/login.js"></script>
 
 </body>
 
