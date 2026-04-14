@@ -1,7 +1,14 @@
-  function togglePass(id) {
-            const input = document.getElementById(id);
-            input.type = input.type === 'password' ? 'text' : 'password';
-        }
+  function togglePass(id, iconElement) {
+    const input = document.getElementById(id);
+    
+    if (input.type === 'password') {
+        input.type = 'text';
+        iconElement.textContent = 'visibility_off'; // العين المغمضة
+    } else {
+        input.type = 'password';
+        iconElement.textContent = 'visibility'; // العين المفتوحة
+    }
+}
 
         document.getElementById('resetForm').onsubmit = (e) => {
             e.preventDefault();
