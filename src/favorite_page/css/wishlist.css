@@ -104,3 +104,82 @@
             /* أهم سطر: يجعل الصورة تتناسب مع المربع مهما كان حجمها */
             transition: transform 0.3s ease;
         }
+
+        .delete-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            color: var(--error);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .delete-btn:hover {
+            background: var(--error);
+            color: white;
+        }
+
+        .product-info h3 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .status-badge {
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .in-stock {
+            background: #e8f5e9;
+            color: var(--success);
+        }
+
+        .out-stock {
+            background: #ffebee;
+            color: var(--error);
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .price {
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .add-cart-btn {
+            background: var(--gradient);
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(151, 72, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .add-cart-btn:hover {
+            box-shadow: 0 6px 15px rgba(151, 72, 0, 0.3);
+            transform: scale(1.03);
+        }
