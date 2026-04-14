@@ -1,0 +1,106 @@
+        :root {
+            --primary: #974800;
+            --primary-orange: #f48024;
+            --background: #fbf9f4;
+            --surface: #ffffff;
+            --text-main: #1b1c19;
+            --text-variant: #574337;
+            --outline: #ddc1b1;
+            --error: #ba1a1a;
+            --success: #2e7d32;
+            --gradient: linear-gradient(135deg, #f48024 0%, #974800 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+
+        /* Main Layout */
+        main {
+            padding: 120px 5% 50px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .page-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .page-header h1 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 2.2rem;
+            color: var(--primary);
+        }
+
+        .item-count {
+            background: #eae8e3;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-variant);
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 40px;
+        }
+
+        /* Wishlist Grid */
+        .wishlist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #f5f3ee;
+            border-radius: 15px;
+            padding: 15px;
+            position: relative;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .product-card:hover {
+            background: #eae8e3;
+            transform: translateY(-5px);
+        }
+
+        /* ضبط حاوية الصورة */
+        .image-container {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #ffffff;
+            /* التأكد من الخلفية البيضاء */
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            /* مسافة أمان داخلية للصورة */
+        }
+
+        /* ضبط الصورة نفسها */
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            /* أهم سطر: يجعل الصورة تتناسب مع المربع مهما كان حجمها */
+            transition: transform 0.3s ease;
+        }
