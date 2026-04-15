@@ -74,3 +74,76 @@
             </div>
         </div>
     </section>
+
+        <section class="tabs-section">
+        <div class="tab-nav">
+            <div class="tab-btn active" onclick="openTab(event, 'specs')">المواصفات التقنية</div>
+            <div class="tab-btn" onclick="openTab(event, 'reviews')">التقييمات</div>
+        </div>
+
+        <div id="specs" class="tab-pane active">
+            <table class="specs-table">
+                <tr><td class="spec-label">المعالج (CPU)</td><td class="spec-value">AMD Ryzen 9 5900HX (8-core/16-thread, up to 4.6 GHz)</td></tr>
+                <tr><td class="spec-label">الذاكرة (RAM)</td><td class="spec-value">16GB DDR5 4800MHz Dual-Channel (قابل للتطوير)</td></tr>
+                <tr><td class="spec-label">كرت الشاشة (GPU)</td><td class="spec-value">NVIDIA GeForce RTX 3060 Laptop GPU, 6GB GDDR6</td></tr>
+                <tr><td class="spec-label">التخزين (SSD)</td><td class="spec-value">1TB M.2 NVMe PCIe 4.0 SSD</td></tr>
+                <tr><td class="spec-label">الشاشة</td><td class="spec-value">15.6-inch, WQHD (2560 x 1440) 300Hz, 3ms IPS</td></tr>
+            </table>
+        </div>
+
+        <div id="reviews" class="tab-pane">
+            <div class="review-layout">
+                <div class="average-box">
+                    <h1 class="score">4.8</h1>
+                    <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined">star_half</span></div>
+                    <p>بناءً على 124 تقييم</p>
+                    <button class="btn-review-write" onclick="toggleReviewForm()">كتابة مراجعة <span class="material-symbols-outlined">rate_review</span></button>
+                </div>
+                <div class="bars-container">
+                    <div class="bar-row"><span>5 نجوم</span><div class="bar"><div class="fill" style="width: 85%;"></div></div><span>85%</span></div>
+                    <div class="bar-row"><span>4 نجوم</span><div class="bar"><div class="fill" style="width: 10%;"></div></div><span>10%</span></div>
+                    <div class="bar-row"><span>3 نجوم</span><div class="bar"><div class="fill" style="width: 3%;"></div></div><span>3%</span></div>
+                    <div class="bar-row"><span>نجمتان</span><div class="bar"><div class="fill" style="width: 2%;"></div></div><span>2%</span></div>
+                    <div class="bar-row"><span>نجمة</span><div class="bar"><div class="fill" style="width: 0%;"></div></div><span>0%</span></div>
+                </div>
+            </div>
+
+            <div id="reviewForm" class="hidden-form">
+                <h3>شاركنا رأيك بصدق</h3>
+                <textarea placeholder="اكتب مراجعتك هنا، نحن نهتم لرأيك..."></textarea>
+                <button class="btn-main small">إرسال التقييم</button>
+            </div>
+
+            <div class="reviews-list">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="user-info">
+                            <div class="user-avatar">ع</div>
+                            <div>
+                                <h4 class="user-name">علي محمد الثقباني</h4>
+                                <p class="verified-tag">✓ مشترٍ مؤكد</p>
+                            </div>
+                        </div>
+                        <span class="review-date">قبل يومين</span>
+                    </div>
+                    <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span></div>
+                    <p class="review-text">جهاز جبار جداً، التبريد في هذا الموديل ممتاز والسرعة خيالية في الألعاب التقنية. أنصح به وبشدة.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="user-info">
+                            <div class="user-avatar">م</div>
+                            <div>
+                                <h4 class="user-name">محمد حسين</h4>
+                            </div>
+                        </div>
+                        <span class="review-date">قبل أسبوع</span>
+                    </div>
+                    <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined">star</span></div>
+                    <p class="review-text">أداء ممتاز جداً كرت الشاشة RTX 3060 يشغل كل الألعاب بسلاسة. فقط الصوت عالي قليلاً عند تفعيل التبريد الأقصى.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
