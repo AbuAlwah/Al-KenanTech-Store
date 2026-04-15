@@ -1,4 +1,3 @@
-<script>
     // 1. وظيفة العودة للخلف
     function goBack() {
         window.history.back();
@@ -46,4 +45,3 @@
             }
         });
     });
-</script>
