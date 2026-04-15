@@ -1,0 +1,31 @@
+:root {
+    --primary: #974800;
+    --primary-orange: #f48024;
+    --primary-bg-alt: #fcf6ec;
+    --bg-body: #fbf9f4;
+    --surface: #ffffff;
+    --surface-alt: #f5f3ee;
+    --text-main: #1b1c19;
+    --text-variant: #574337;
+    --outline: #ddc1b1;
+    --success: #2e7d32;
+    --success-bg: #e8f5e9;
+    --shadow-subtle: 0 4px 12px rgba(138, 114, 100, 0.04);
+    --shadow: 0 12px 32px rgba(138, 114, 100, 0.08);
+    --gradient: linear-gradient(135deg, #f48024 0%, #974800 100%);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+body { background-color: var(--bg-body); color: var(--text-main); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+.main-header { background: var(--surface); padding: 20px 0; border-bottom: 1px solid #e4e2dd; margin-bottom: 30px; }
+.nav-flex { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 24px; font-weight: 800; }
+.logo span { color: var(--primary-orange); }
+.icon-btn { cursor: pointer; margin-right: 15px; color: var(--primary); }
+
+/* Icons & Stars */
+.material-symbols-outlined.fill { font-variation-settings: 'FILL' 1; }
+.stars.yellow { color: #ffb300; }
