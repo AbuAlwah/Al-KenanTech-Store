@@ -1,149 +1,247 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asus ROG Strix G15 - الكنان تك</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
 </head>
+
 <body>
 
-<header class="main-header">
-    <div class="container nav-flex">
-        <div class="logo">AL <span>KENAN</span> TECH</div>
-        <div class="user-tools">
-            <span class="material-symbols-outlined icon-btn">person</span>
-            <span class="material-symbols-outlined icon-btn">shopping_cart</span>
-        </div>
-    </div>
-</header>
-
-<main class="container">
-    <nav class="breadcrumb">
-        <span>الرئيسية</span> / <span>لابتوبات</span> / <span class="active">لابتوبات جيمنج</span>
-    </nav>
-
-    <section class="product-hero">
-        <div class="product-visuals">
-            <div class="main-image-wrapper">
-                <div class="badge-new">جديد</div>
-                <img id="main-img" src="src/img/categories_section_laptop.jpg" alt="Laptop">
-            </div>
-            <div class="thumb-grid">
-                <div class="thumb active"><img src="src/img/categories_section_laptop.jpg" onclick="updateImg(this)"></div>
-                <div class="thumb"><img src="src/img/categories_section_graphicsCard.jpg" onclick="updateImg(this)"></div>
-                <div class="thumb"><img src="src/img/categories_section_mouse.jpg" onclick="updateImg(this)"></div>
-                <div class="thumb"><img src="src/img/categories_section_processor.webp" onclick="updateImg(this)"></div>
+    <header class="main-header">
+        <div class="container nav-flex">
+            <div class="logo">AL <span>KENAN</span> TECH</div>
+            <div class="user-tools">
+                <span class="material-symbols-outlined icon-btn">person</span>
+                <span class="material-symbols-outlined icon-btn">shopping_cart</span>
             </div>
         </div>
+    </header>
 
-                <div class="product-info">
-            <p class="brand-label">ASUS ROG SERIES</p>
-            <h1>Asus ROG Strix G15 Gaming Laptop</h1>
-            
-            <div class="rating-row">
-                <div class="stars yellow">
-                    <span class="material-symbols-outlined fill">star</span>
-                    <span class="material-symbols-outlined fill">star</span>
-                    <span class="material-symbols-outlined fill">star</span>
-                    <span class="material-symbols-outlined fill">star</span>
-                    <span class="material-symbols-outlined">star_half</span>
+    <main class="container">
+        <nav class="breadcrumb">
+            <span>الرئيسية</span> / <span>لابتوبات</span> / <span class="active">لابتوبات جيمنج</span>
+        </nav>
+
+        <section class="product-hero">
+            <div class="product-visuals">
+                <div class="main-image-wrapper">
+                    <div class="badge-new">جديد</div>
+                    <img id="main-img" src="src/img/categories_section_laptop.jpg" alt="Laptop">
                 </div>
-                <span class="count">(124 تقييم)</span>
-            </div>
-
-            <div class="price">4,999 ر.س</div>
-
-            <ul class="short-specs">
-                <li><span class="bullet"></span> المعالج: AMD Ryzen 9 5900HX</li>
-                <li><span class="bullet"></span> الذاكرة: 16GB DDR5 4800MHz</li>
-                <li><span class="bullet"></span> الجرافيكس: NVIDIA RTX 3060 6GB</li>
-            </ul>
-
-            <div class="action-area">
-                <div class="qty-box">
-                    <button onclick="changeQty(-1)">-</button>
-                    <span id="qty-val">1</span>
-                    <button onclick="changeQty(1)">+</button>
+                <div class="thumb-grid">
+                    <div class="thumb active"><img src="src/img/categories_section_laptop.jpg"
+                            onclick="updateImg(this)"></div>
+                    <div class="thumb"><img src="src/img/categories_section_graphicsCard.jpg" onclick="updateImg(this)">
+                    </div>
+                    <div class="thumb"><img src="src/img/categories_section_mouse.jpg" onclick="updateImg(this)"></div>
+                    <div class="thumb"><img src="src/img/categories_section_processor.webp" onclick="updateImg(this)">
+                    </div>
                 </div>
-                <button class="btn-main">
-                    <span class="material-symbols-outlined">shopping_bag</span>
-                    إضافة للسلة
-                </button>
             </div>
-        </div>
-    </section>
+
+            <div class="product-info">
+                <p class="brand-label">ASUS ROG SERIES</p>
+                <h1>Asus ROG Strix G15 Gaming Laptop</h1>
+
+                <div class="rating-row">
+                    <div class="stars yellow">
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+                    <span class="count">(124 تقييم)</span>
+                </div>
+
+                <div class="price">4,999 ر.س</div>
+
+                <ul class="short-specs">
+                    <li><span class="bullet"></span> المعالج: AMD Ryzen 9 5900HX</li>
+                    <li><span class="bullet"></span> الذاكرة: 16GB DDR5 4800MHz</li>
+                    <li><span class="bullet"></span> الجرافيكس: NVIDIA RTX 3060 6GB</li>
+                </ul>
+
+                <div class="action-area">
+                    <div class="qty-box">
+                        <button onclick="changeQty(-1)">-</button>
+                        <span id="qty-val">1</span>
+                        <button onclick="changeQty(1)">+</button>
+                    </div>
+                    <button class="btn-main">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        إضافة للسلة
+                    </button>
+                </div>
+            </div>
+        </section>
 
         <section class="tabs-section">
-        <div class="tab-nav">
-            <div class="tab-btn active" onclick="openTab(event, 'specs')">المواصفات التقنية</div>
-            <div class="tab-btn" onclick="openTab(event, 'reviews')">التقييمات</div>
-        </div>
-
-        <div id="specs" class="tab-pane active">
-            <table class="specs-table">
-                <tr><td class="spec-label">المعالج (CPU)</td><td class="spec-value">AMD Ryzen 9 5900HX (8-core/16-thread, up to 4.6 GHz)</td></tr>
-                <tr><td class="spec-label">الذاكرة (RAM)</td><td class="spec-value">16GB DDR5 4800MHz Dual-Channel (قابل للتطوير)</td></tr>
-                <tr><td class="spec-label">كرت الشاشة (GPU)</td><td class="spec-value">NVIDIA GeForce RTX 3060 Laptop GPU, 6GB GDDR6</td></tr>
-                <tr><td class="spec-label">التخزين (SSD)</td><td class="spec-value">1TB M.2 NVMe PCIe 4.0 SSD</td></tr>
-                <tr><td class="spec-label">الشاشة</td><td class="spec-value">15.6-inch, WQHD (2560 x 1440) 300Hz, 3ms IPS</td></tr>
-            </table>
-        </div>
-
-        <div id="reviews" class="tab-pane">
-            <div class="review-layout">
-                <div class="average-box">
-                    <h1 class="score">4.8</h1>
-                    <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined">star_half</span></div>
-                    <p>بناءً على 124 تقييم</p>
-                    <button class="btn-review-write" onclick="toggleReviewForm()">كتابة مراجعة <span class="material-symbols-outlined">rate_review</span></button>
-                </div>
-                <div class="bars-container">
-                    <div class="bar-row"><span>5 نجوم</span><div class="bar"><div class="fill" style="width: 85%;"></div></div><span>85%</span></div>
-                    <div class="bar-row"><span>4 نجوم</span><div class="bar"><div class="fill" style="width: 10%;"></div></div><span>10%</span></div>
-                    <div class="bar-row"><span>3 نجوم</span><div class="bar"><div class="fill" style="width: 3%;"></div></div><span>3%</span></div>
-                    <div class="bar-row"><span>نجمتان</span><div class="bar"><div class="fill" style="width: 2%;"></div></div><span>2%</span></div>
-                    <div class="bar-row"><span>نجمة</span><div class="bar"><div class="fill" style="width: 0%;"></div></div><span>0%</span></div>
-                </div>
+            <div class="tab-nav">
+                <div class="tab-btn active" onclick="openTab(event, 'specs')">المواصفات التقنية</div>
+                <div class="tab-btn" onclick="openTab(event, 'reviews')">التقييمات</div>
             </div>
 
-            <div id="reviewForm" class="hidden-form">
-                <h3>شاركنا رأيك بصدق</h3>
-                <textarea placeholder="اكتب مراجعتك هنا، نحن نهتم لرأيك..."></textarea>
-                <button class="btn-main small">إرسال التقييم</button>
+            <div id="specs" class="tab-pane active">
+                <table class="specs-table">
+                    <tr>
+                        <td class="spec-label">المعالج (CPU)</td>
+                        <td class="spec-value">AMD Ryzen 9 5900HX (8-core/16-thread, up to 4.6 GHz)</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">الذاكرة (RAM)</td>
+                        <td class="spec-value">16GB DDR5 4800MHz Dual-Channel (قابل للتطوير)</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">كرت الشاشة (GPU)</td>
+                        <td class="spec-value">NVIDIA GeForce RTX 3060 Laptop GPU, 6GB GDDR6</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">التخزين (SSD)</td>
+                        <td class="spec-value">1TB M.2 NVMe PCIe 4.0 SSD</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">الشاشة</td>
+                        <td class="spec-value">15.6-inch, WQHD (2560 x 1440) 300Hz, 3ms IPS</td>
+                    </tr>
+                </table>
             </div>
 
-            <div class="reviews-list">
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="user-info">
-                            <div class="user-avatar">ع</div>
-                            <div>
-                                <h4 class="user-name">علي محمد الثقباني</h4>
-                                <p class="verified-tag">✓ مشترٍ مؤكد</p>
-                            </div>
-                        </div>
-                        <span class="review-date">قبل يومين</span>
+            <div id="reviews" class="tab-pane">
+                <div class="review-layout">
+                    <div class="average-box">
+                        <h1 class="score">4.8</h1>
+                        <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined">star_half</span></div>
+                        <p>بناءً على 124 تقييم</p>
+                        <button class="btn-review-write" onclick="toggleReviewForm()">كتابة مراجعة <span
+                                class="material-symbols-outlined">rate_review</span></button>
                     </div>
-                    <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span></div>
-                    <p class="review-text">جهاز جبار جداً، التبريد في هذا الموديل ممتاز والسرعة خيالية في الألعاب التقنية. أنصح به وبشدة.</p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="user-info">
-                            <div class="user-avatar">م</div>
-                            <div>
-                                <h4 class="user-name">محمد حسين</h4>
-                            </div>
+                    <div class="bars-container">
+                        <div class="bar-row"><span>5 نجوم</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 85%;"></div>
+                            </div><span>85%</span>
                         </div>
-                        <span class="review-date">قبل أسبوع</span>
+                        <div class="bar-row"><span>4 نجوم</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div><span>10%</span>
+                        </div>
+                        <div class="bar-row"><span>3 نجوم</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 3%;"></div>
+                            </div><span>3%</span>
+                        </div>
+                        <div class="bar-row"><span>نجمتان</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 2%;"></div>
+                            </div><span>2%</span>
+                        </div>
+                        <div class="bar-row"><span>نجمة</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div><span>0%</span>
+                        </div>
                     </div>
-                    <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined fill">star</span><span class="material-symbols-outlined">star</span></div>
-                    <p class="review-text">أداء ممتاز جداً كرت الشاشة RTX 3060 يشغل كل الألعاب بسلاسة. فقط الصوت عالي قليلاً عند تفعيل التبريد الأقصى.</p>
+                </div>
+
+                <div id="reviewForm" class="hidden-form">
+                    <h3>شاركنا رأيك بصدق</h3>
+                    <textarea placeholder="اكتب مراجعتك هنا، نحن نهتم لرأيك..."></textarea>
+                    <button class="btn-main small">إرسال التقييم</button>
+                </div>
+
+                <div class="reviews-list">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="user-info">
+                                <div class="user-avatar">ع</div>
+                                <div>
+                                    <h4 class="user-name">علي محمد الثقباني</h4>
+                                    <p class="verified-tag">✓ مشترٍ مؤكد</p>
+                                </div>
+                            </div>
+                            <span class="review-date">قبل يومين</span>
+                        </div>
+                        <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span></div>
+                        <p class="review-text">جهاز جبار جداً، التبريد في هذا الموديل ممتاز والسرعة خيالية في الألعاب
+                            التقنية. أنصح به وبشدة.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="user-info">
+                                <div class="user-avatar">م</div>
+                                <div>
+                                    <h4 class="user-name">محمد حسين</h4>
+                                </div>
+                            </div>
+                            <span class="review-date">قبل أسبوع</span>
+                        </div>
+                        <div class="stars yellow"><span class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined fill">star</span><span
+                                class="material-symbols-outlined">star</span></div>
+                        <p class="review-text">أداء ممتاز جداً كرت الشاشة RTX 3060 يشغل كل الألعاب بسلاسة. فقط الصوت
+                            عالي قليلاً عند تفعيل التبريد الأقصى.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section class="related-section">
+            <div class="section-header">
+                <h2>إكسسوارات مقترحة</h2>
+                <a href="#" class="view-all">عرض الكل <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+            <div class="grid-cards wishlist-style">
+                <div class="card product-card">
+                    <div class="image-container">
+                        <img src="src/img/categories_section_accessories.jpg" alt="Mouse">
+                        <button class="btn-wishlist material-symbols-outlined">favorite</button>
+                    </div>
+                    <div class="card-info">
+                        <span class="status-badge in-stock">متوفر</span>
+                        <h3>ROG Gladius III Mouse</h3>
+                        <p class="card-price">299 ر.س</p>
+                        <div class="card-actions">
+                            <button class="btn-add-cart">إضافة للسلة</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="image-container">
+                        <img src="src/img/hero-img.png" alt="Keyboard">
+                        <button class="btn-wishlist material-symbols-outlined">favorite</button>
+                    </div>
+                    <div class="card-info">
+                        <span class="status-badge in-stock">متوفر</span>
+                        <h3>Mechanical Keyboard</h3>
+                        <p class="card-price">549 ر.س</p>
+                        <div class="card-actions">
+                            <button class="btn-add-cart">إضافة للسلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
 
+</html>
