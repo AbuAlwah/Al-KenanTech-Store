@@ -1,0 +1,227 @@
+/* Tabs */
+.tabs-section {
+    margin-top: 60px;
+}
+
+.tab-nav {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--text-variant);
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.specs-table td {
+    padding: 20px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 14px;
+}
+
+.spec-label {
+    background: #f9f7f2;
+    font-weight: 700;
+    width: 30%;
+    color: var(--text-main);
+}
+
+.spec-value {
+    color: var(--text-variant);
+}
+
+/* --- REVIEWS SECTION --- */
+.review-layout {
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+    box-shadow: var(--shadow-subtle);
+}
+
+.average-box {
+    text-align: center;
+    border-left: 1px solid #eee;
+    padding-left: 40px;
+    min-width: 150px;
+}
+
+.score {
+    font-size: 48px;
+    color: var(--primary);
+}
+
+.btn-review-write {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background-color: var(--primary-bg-alt);
+    color: var(--primary);
+    border: 2px solid var(--outline);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn-review-write:hover {
+    background-color: #fcebd2;
+    border-color: var(--primary-orange);
+    color: var(--primary-orange);
+}
+
+.bars-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: var(--text-variant);
+}
+
+.bar {
+    flex-grow: 1;
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar .fill {
+    height: 100%;
+    background: var(--primary-orange);
+}
+
+.hidden-form {
+    background: #fdfaf5;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: none;
+    border: 1px dashed var(--outline);
+}
+
+.hidden-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--outline);
+    margin: 15px 0;
+    font-family: 'Cairo';
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    border-color: var(--primary-orange);
+    box-shadow: var(--shadow-subtle);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 44px;
+    height: 44px;
+    background: var(--surface-alt);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--primary);
+    border: 1px solid #e4e2dd;
+}
+
+.user-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.verified-tag {
+    font-size: 12px;
+    color: var(--success);
+    font-weight: 700;
+    background-color: var(--success-bg);
+    padding: 2px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.review-text {
+    font-size: 14px;
+    color: var(--text-variant);
+    line-height: 1.8;
+    margin-top: 10px;
+}
